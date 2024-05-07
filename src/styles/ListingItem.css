@@ -1,0 +1,55 @@
+.listing-item-wrapper {
+  position: relative;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 1;
+}
+
+.listing-item-wrapper.deleted {
+  transform: translateX(-100%);
+  opacity: 0;
+}
+
+.delete-icon {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  cursor: pointer;
+}
+
+.listing-item-wrapper.fade-out {
+  opacity: 0;
+}
+
+.list-item {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 16px;
+  background-color: #f9f9f9;
+}
+
+.list-item__name {
+  margin-top: 0;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.list-item__info {
+  margin: 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.list-item__label {
+  font-weight: bold;
+}
+
+.list-item__link {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.list-item__link:hover {
+  text-decoration: underline;
+}
